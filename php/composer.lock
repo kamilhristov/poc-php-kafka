@@ -1,11 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "hash": "2dd2c4ca5aeacbff458bf38ae57abcab",
-    "content-hash": "a77b1f1bdb32931a81771e6efdc3305b",
+    "content-hash": "7dcf24b628207edd2d3ca568c5149348",
     "packages": [
         {
             "name": "guzzle/guzzle",
@@ -101,20 +100,20 @@
                 "web service"
             ],
             "abandoned": "guzzlehttp/guzzle",
-            "time": "2015-03-18 18:23:50"
+            "time": "2015-03-18T18:23:50+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v2.8.15",
+            "version": "v2.8.52",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "25c576abd4e0f212e678fe8b2bd9a9a98c7ea934"
+                "reference": "a77e974a5fecb4398833b0709210e3d5e334ffb0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/25c576abd4e0f212e678fe8b2bd9a9a98c7ea934",
-                "reference": "25c576abd4e0f212e678fe8b2bd9a9a98c7ea934",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/a77e974a5fecb4398833b0709210e3d5e334ffb0",
+                "reference": "a77e974a5fecb4398833b0709210e3d5e334ffb0",
                 "shasum": ""
             },
             "require": {
@@ -122,7 +121,7 @@
             },
             "require-dev": {
                 "psr/log": "~1.0",
-                "symfony/config": "~2.0,>=2.0.5|~3.0.0",
+                "symfony/config": "^2.0.5|~3.0.0",
                 "symfony/dependency-injection": "~2.6|~3.0.0",
                 "symfony/expression-language": "~2.6|~3.0.0",
                 "symfony/stopwatch": "~2.3|~3.0.0"
@@ -161,28 +160,30 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2016-10-13 01:43:15"
+            "time": "2018-11-21T14:20:20+00:00"
         },
         {
             "name": "wikimedia/avro",
-            "version": "v1.7.7",
+            "version": "v1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wikimedia/avro-php.git",
-                "reference": "b642da9fd895aab7cb3261a22624228115471f47"
+                "reference": "b2e0c9d750da03d95ba979215397f62a6121ddea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/avro-php/zipball/b642da9fd895aab7cb3261a22624228115471f47",
-                "reference": "b642da9fd895aab7cb3261a22624228115471f47",
+                "url": "https://api.github.com/repos/wikimedia/avro-php/zipball/b2e0c9d750da03d95ba979215397f62a6121ddea",
+                "reference": "b2e0c9d750da03d95ba979215397f62a6121ddea",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=5.5.9"
             },
             "require-dev": {
-                "jakub-onderka/php-parallel-lint": "^0.9",
-                "phpunit/phpunit": "^4.0.0"
+                "jakub-onderka/php-console-highlighter": "0.3.2",
+                "jakub-onderka/php-parallel-lint": "1.0.0",
+                "mediawiki/minus-x": "0.3.1",
+                "phpunit/phpunit": "4.8.36"
             },
             "suggest": {
                 "ext-gmp": "Large integer support for 32-bit platforms."
@@ -228,7 +229,7 @@
             "keywords": [
                 "serialization"
             ],
-            "time": "2015-09-05 18:49:27"
+            "time": "2019-09-16T15:18:39+00:00"
         }
     ],
     "packages-dev": [
@@ -264,7 +265,7 @@
                 }
             ],
             "description": "Rdkafka extension stubs for your IDE",
-            "time": "2016-09-19 19:48:57"
+            "time": "2016-09-19T19:48:57+00:00"
         }
     ],
     "aliases": [],
@@ -274,7 +275,7 @@
     "prefer-lowest": false,
     "platform": {
         "php": ">=7.1.0",
-        "ext-rdkafka": "^3.0"
+        "ext-rdkafka": "^4.0"
     },
     "platform-dev": []
 }

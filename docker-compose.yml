@@ -9,6 +9,7 @@ services:
       context: docker/php
     volumes:
       - ./php:/data
+    entrypoint: "sleep 1000000"
     working_dir: /data
     depends_on:
       - kafka
