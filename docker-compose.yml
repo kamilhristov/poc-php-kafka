@@ -4,6 +4,19 @@ networks:
     driver: bridge
 
 services:
+  composer-install:
+    build:
+      context: docker/php
+    volumes:
+      - ./php:/data
+    command: "composer install"
+    working_dir: /data
+    depends_on:
+      - kafka
+      - schemaregistry
+    networks:
+      - default
+
   php:
     build:
       context: docker/php
@@ -12,6 +25,7 @@ services:
     entrypoint: "sleep 1000000"
     working_dir: /data
     depends_on:
+      - composer-install
       - kafka
       - schemaregistry
     networks:
